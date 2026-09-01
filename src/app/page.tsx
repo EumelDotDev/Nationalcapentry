@@ -6,6 +6,12 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ServiceCard from "@/components/ServiceCard";
+import Logo from "@/components/Logo";
+import SelectedWorks from "@/components/SelectedWorks";
+import ProcessSection from "@/components/ProcessSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import PreFooterBanner from "@/components/PreFooterBanner";
+import Footer from "@/components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -153,7 +159,7 @@ export default function Home() {
           
           {/* Navigation */}
           <header ref={navRef} className="flex justify-between items-center text-sm font-sans tracking-wide uppercase">
-            <img src="/logo.png" alt="National Carpentry Installation" className="h-10 w-auto hidden lg:block" />
+            <Logo className="h-14 md:h-16 w-auto" />
             <nav className="flex space-x-6 lg:space-x-12">
               <Link href="#" className="hover:text-zinc-400 transition-colors">Home</Link>
               <Link href="#" className="hover:text-zinc-400 transition-colors">Services</Link>
@@ -279,6 +285,21 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* Selected Works Section */}
+      <SelectedWorks />
+
+      {/* Process Section */}
+      <ProcessSection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* Pre-Footer Banner */}
+      <PreFooterBanner />
+
+      {/* Footer / CTA Section */}
+      <Footer />
     </main>
   );
 }
