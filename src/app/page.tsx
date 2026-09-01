@@ -6,7 +6,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ServiceCard from "@/components/ServiceCard";
-import Logo from "@/components/Logo";
+import Navbar from "@/components/Navbar";
 import SelectedWorks from "@/components/SelectedWorks";
 import ProcessSection from "@/components/ProcessSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -21,7 +21,6 @@ export default function Home() {
   const imageContainerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const subtextRef = useRef<HTMLDivElement>(null);
-  const navRef = useRef<HTMLHeadElement>(null);
   const trustBarRef = useRef<HTMLDivElement>(null);
   const servicesHeaderRef = useRef<HTMLHeadingElement>(null);
   const serviceCardsRef = useRef<HTMLDivElement>(null);
@@ -30,14 +29,6 @@ export default function Home() {
     // Initial Load Animation
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
-
-      // Navbar fade in
-      tl.fromTo(
-        navRef.current,
-        { opacity: 0, y: -20 },
-        { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
-        0.2
-      );
 
       // Massive text slide up reveal
       tl.fromTo(
@@ -158,15 +149,7 @@ export default function Home() {
         <div className="w-full lg:w-1/2 h-1/2 lg:h-full flex flex-col justify-between p-6 lg:p-16 relative z-20">
           
           {/* Navigation */}
-          <header ref={navRef} className="flex justify-between items-center text-sm font-sans tracking-wide uppercase">
-            <Logo className="h-14 md:h-16 w-auto" />
-            <nav className="flex space-x-6 lg:space-x-12">
-              <Link href="#" className="hover:text-zinc-400 transition-colors">Home</Link>
-              <Link href="#" className="hover:text-zinc-400 transition-colors">Services</Link>
-              <Link href="#" className="hover:text-zinc-400 transition-colors">Work</Link>
-              <Link href="#" className="hover:text-zinc-400 transition-colors">Contact</Link>
-            </nav>
-          </header>
+          <Navbar className="w-full" />
 
           {/* Typography Content */}
           <div className="flex flex-col justify-end lg:justify-center flex-grow mt-20 lg:mt-0 relative">
@@ -197,10 +180,10 @@ export default function Home() {
               </p>
               <Link 
                 href="#quote" 
-                className="inline-flex items-center mt-8 text-sm uppercase tracking-widest font-semibold border-b border-zinc-700 pb-1 hover:border-zinc-50 transition-colors group"
+                className="inline-flex items-center mt-8 w-fit border border-white/30 px-8 py-4 text-white text-xs uppercase tracking-[0.2em] font-bold hover:bg-white hover:text-black transition-all duration-300 group"
               >
                 Get a Quote 
-                <span className="ml-2 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">↗</span>
+                <span className="ml-3 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform font-serif text-lg leading-none">↗</span>
               </Link>
             </div>
           </div>
@@ -258,7 +241,7 @@ export default function Home() {
             <ServiceCard 
               title="Commercial & Residential Installations"
               imageSrc="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop"
-              href="/services/installations"
+              href="/services/millwork"
               className="w-full h-full"
             />
           </div>

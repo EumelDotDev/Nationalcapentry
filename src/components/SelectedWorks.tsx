@@ -9,7 +9,7 @@ const projects = [
     id: "01",
     title: "Commercial Cabinetry",
     client: "Toronto Financial District",
-    image: "https://images.unsplash.com/photo-1541604193435-22287d70b2b2?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1661929519129-7a76946c1d38?q=80&w=2070&auto=format&fit=crop",
     style: "w-full h-full inset-0", // Base full screen
     zImage: 0,
     zText: 10,
@@ -18,8 +18,8 @@ const projects = [
     id: "02",
     title: "On-Site Trim & Finish",
     client: "Luxury Residence, Vancouver",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
-    style: "w-[85vw] md:w-[45vw] h-[60vh] bottom-0 right-0 md:right-[10vw]", // Offset bottom right
+    image: "https://images.unsplash.com/photo-1677700640123-beeeffce4944?q=80&w=2070&auto=format&fit=crop",
+    style: "w-[75vw] md:w-[45vw] h-[40vh] md:h-[60vh] bottom-6 md:bottom-0 right-6 md:right-[10vw]", // Offset bottom right
     zImage: 20,
     zText: 30,
   },
@@ -27,8 +27,8 @@ const projects = [
     id: "03",
     title: "Bespoke Paneling",
     client: "Boutique Hotel, Saint Lucia",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-    style: "w-[90vw] md:w-[50vw] h-[70vh] top-[10vh] left-0 md:left-[5vw]", // Offset top left
+    image: "https://images.unsplash.com/photo-1546967900-1bea5f16b69d?q=80&w=2070&auto=format&fit=crop",
+    style: "w-[80vw] md:w-[50vw] h-[40vh] md:h-[70vh] top-[15vh] md:top-[10vh] left-6 md:left-[5vw]", // Offset top left
     zImage: 40,
     zText: 50,
   }

@@ -63,17 +63,18 @@ export default function TestimonialsSection() {
     <section className="w-full bg-zinc-950 pt-24 pb-0 overflow-hidden flex flex-col items-center border-t border-zinc-900">
       
       {/* HEADER - Restored to the established dark/moody architectural aesthetic */}
-      <div className="text-center mb-16 md:mb-24 relative z-50">
+      <div className="text-center mb-24 md:mb-32 relative z-50">
         <span className="block text-zinc-500 font-sans font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4">
           What our clients are saying
         </span>
         <h2 className="font-serif text-4xl md:text-6xl tracking-tighter text-zinc-50">
-          Client Feedback
+          Client Stories
         </h2>
       </div>
 
       {/* 3D CAROUSEL WRAPPER */}
-      <div className="relative w-full max-w-7xl h-[450px] md:h-[400px] flex items-center justify-center">
+      {/* 3D CAROUSEL WRAPPER */}
+      <div className="relative w-full max-w-7xl h-[650px] md:h-[500px] flex items-center justify-center">
         
         {reviews.map((review, index) => {
           // Determine relative position
@@ -108,7 +109,7 @@ export default function TestimonialsSection() {
           return (
             <div
               key={review.id}
-              className={`absolute top-1/2 -translate-y-1/2 w-[90vw] md:w-[600px] bg-zinc-900 rounded-lg p-10 md:p-14 transition-all duration-700 ease-in-out ${opacity} ${pointerEvents}`}
+              className={`absolute top-1/2 -translate-y-1/2 w-[95vw] md:w-[600px] bg-zinc-900 rounded-lg p-6 md:p-14 transition-all duration-700 ease-in-out ${opacity} ${pointerEvents}`}
               style={{
                 transform: `${transform} translateY(-50%)`,
                 zIndex,
