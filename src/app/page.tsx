@@ -197,7 +197,7 @@ export default function Home() {
           {/* We are using an Unsplash placeholder here until the user provides the Pinterest image */}
           <img
             ref={imageRef}
-            src="/hero-bg.jpeg"
+            src="/images/homepage/homepage_hero_1788301476427.jpg"
             alt="High-end Architectural Millwork"
             className="absolute inset-0 w-full h-[120%] object-cover object-center -top-[10%]"
           />

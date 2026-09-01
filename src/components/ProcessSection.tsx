@@ -9,13 +9,13 @@ const steps = [
     id: "01",
     title: "Site Logistics & Staging",
     description: "Coordinating deliveries and preparing the site across Canada for efficient workflow.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop"
+    image: "/images/homepage/process_1_consultation_1788301510637.jpg"
   },
   {
     id: "02",
     title: "Cabinetry Assembly",
     description: "Flawless, efficient installation of pre-built cabinetry systems and case goods.",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070&auto=format&fit=crop"
+    image: "/images/homepage/process_2_fabrication_1788301578935.jpg"
   },
   {
     id: "03",

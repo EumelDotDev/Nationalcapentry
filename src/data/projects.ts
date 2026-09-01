@@ -32,8 +32,8 @@ export const projectsData: Project[] = [
     solution: "We engineered custom bending plywood substrates in our shop and pre-finished all veneers to minimize on-site work. Our installation team worked staggered shifts to safely coordinate with other trades, ensuring a flawless handover three days ahead of schedule.",
     thumbnail: "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2000&auto=format&fit=crop",
     heroImage: "https://images.unsplash.com/photo-1542314831-c6a4d146af50?q=80&w=2000&auto=format&fit=crop", // Hotel Lobby
-    beforeImage: "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2000&auto=format&fit=crop", // Raw construction
-    afterImage: "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2000&auto=format&fit=crop", // Finished hotel room
+    beforeImage: "/images/projects/luminary_before_1788299957396.jpg", // Raw construction
+    afterImage: "/images/projects/luminary_after_1788299992067.jpg", // Finished hotel room
     gallery: [
       "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1551882547-ff40c0d1396a?q=80&w=2000&auto=format&fit=crop",
@@ -54,8 +54,8 @@ export const projectsData: Project[] = [
     solution: "We designed a proprietary interlocking cleat system that allowed us to split the massive panels into modular sections. Once assembled on-site, the seams were completely invisible, preserving the monolithic design intent.",
     thumbnail: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
     heroImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop",
-    beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop", // Framing/woodworking
-    afterImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop", // Finished modern kitchen
+    beforeImage: "/images/projects/westend_before_1788300017199.jpg", // Framing/woodworking
+    afterImage: "/images/projects/westend_after_1788300046045.jpg", // Finished modern kitchen
     gallery: [
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop",
@@ -76,8 +76,8 @@ export const projectsData: Project[] = [
     solution: "We collaborated closely with structural engineers to clad a hidden steel armature with precisely milled oak treads and risers. Integrated LED channels were milled directly into the nosing for a seamless lighting effect.",
     thumbnail: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
     heroImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop", // Atrium/Office
-    beforeImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop", // Construction beams
-    afterImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop", // Finished office
+    beforeImage: "/images/projects/tech_before_1788300075294.jpg", // Construction beams
+    afterImage: "/images/projects/tech_after_1788300105003.jpg", // Finished office
     gallery: [
       "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop",
@@ -98,12 +98,12 @@ export const projectsData: Project[] = [
     solution: "We utilized 3D laser scanning to capture the exact contours of the stone walls. Our CNC machines then cut the scribe panels to perfectly match the irregular surfaces before they even arrived on site.",
     thumbnail: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop",
     heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2000&auto=format&fit=crop", // Restaurant
-    beforeImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop", // Raw space
-    afterImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop", // Finished restaurant
+    beforeImage: "/images/projects/heritage_before_1788300129800.jpg", // Raw space
+    afterImage: "/images/projects/heritage_after_1788300162406.jpg", // Finished restaurant
     gallery: [
-      "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?q=80&w=2000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2000&auto=format&fit=crop"
+      "/images/projects/heritage_gallery_1_1788300192327.jpg",
+      "/images/projects/heritage_gallery_2_1788300203981.jpg",
+      "/images/projects/heritage_gallery_3_1788300214188.jpg"
     ]
   }
 ];

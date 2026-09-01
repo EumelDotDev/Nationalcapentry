@@ -147,16 +147,30 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
       </section>
 
       {/* Next Project Nav */}
-      <section className="py-24 md:py-32 border-t border-zinc-200 text-center px-6">
-        <span className="block font-sans text-xs text-zinc-500 uppercase tracking-widest mb-6 font-bold">Next Project</span>
-        <Link 
-          href={`/projects/${nextProject.slug}`}
-          className="inline-block group"
-        >
-          <h2 className="font-serif text-5xl md:text-8xl tracking-tighter text-zinc-900 group-hover:text-zinc-500 transition-colors duration-500">
-            {nextProject.title}
-          </h2>
-        </Link>
+      <section className="py-24 md:py-32 border-t border-zinc-200 px-6 max-w-[1600px] mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+          <div className="flex-1">
+            <span className="block font-sans text-xs text-zinc-500 uppercase tracking-widest mb-6 font-bold">Next Project</span>
+            <Link 
+              href={`/projects/${nextProject.slug}`}
+              className="inline-block group"
+            >
+              <h2 className="font-serif text-5xl md:text-8xl tracking-tighter text-zinc-900 group-hover:text-zinc-500 transition-colors duration-500">
+                {nextProject.title}
+              </h2>
+            </Link>
+          </div>
+          <div className="flex-1 w-full relative h-[40vh] md:h-[60vh] overflow-hidden group">
+            <Link href={`/projects/${nextProject.slug}`}>
+              <Image 
+                src={nextProject.thumbnail}
+                alt={nextProject.title}
+                fill
+                className="object-cover transform group-hover:scale-105 transition-all duration-1000 saturate-0 group-hover:saturate-100"
+              />
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Using standard footer, but we might need to adjust background if Footer is explicitly dark */}
