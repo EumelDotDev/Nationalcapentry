@@ -11,6 +11,7 @@ import SelectedWorks from "@/components/SelectedWorks";
 import ProcessSection from "@/components/ProcessSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PreFooterBanner from "@/components/PreFooterBanner";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import Footer from "@/components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -211,15 +212,15 @@ export default function Home() {
       <section ref={trustBarRef} className="py-24 border-y border-zinc-800 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between gap-12 md:gap-8">
           <div className="trust-stat flex flex-col">
-            <span className="font-serif text-5xl md:text-7xl text-zinc-50 tracking-tighter">40<span className="text-red-600">+</span></span>
+            <AnimatedCounter end={40} suffix={<span className="text-red-600">+</span>} className="font-serif text-5xl md:text-7xl text-zinc-50 tracking-tighter" />
             <span className="font-sans text-sm text-zinc-400 uppercase tracking-widest mt-2">Years of Experience</span>
           </div>
           <div className="trust-stat flex flex-col">
-            <span className="font-serif text-5xl md:text-7xl text-zinc-50 tracking-tighter">250<span className="text-red-600">+</span></span>
+            <AnimatedCounter end={250} suffix={<span className="text-red-600">+</span>} className="font-serif text-5xl md:text-7xl text-zinc-50 tracking-tighter" />
             <span className="font-sans text-sm text-zinc-400 uppercase tracking-widest mt-2">Projects Completed</span>
           </div>
           <div className="trust-stat flex flex-col">
-            <span className="font-serif text-5xl md:text-7xl text-zinc-50 tracking-tighter">98<span className="text-red-600">%+</span></span>
+            <AnimatedCounter end={98} suffix={<span className="text-red-600">%+</span>} className="font-serif text-5xl md:text-7xl text-zinc-50 tracking-tighter" />
             <span className="font-sans text-sm text-zinc-400 uppercase tracking-widest mt-2">Client Satisfaction</span>
           </div>
         </div>
