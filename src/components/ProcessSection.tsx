@@ -21,13 +21,13 @@ const steps = [
     id: "03",
     title: "Custom Wood Carpentry",
     description: "On-site finishing, intricate trim, and custom cuts requiring expert, steady hands.",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop"
+    image: "/images/homepage/process_3_carpentry_1788324145952.jpg"
   },
   {
     id: "04",
     title: "Quality Walkthrough",
     description: "Upholding our national reputation by ensuring absolute perfection before final handover.",
-    image: "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2070&auto=format&fit=crop"
+    image: "/images/homepage/process_4_walkthrough_1788324587192.jpg"
   }
 ];
 

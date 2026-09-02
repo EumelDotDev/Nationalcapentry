@@ -30,14 +30,14 @@ export const projectsData: Project[] = [
     overview: "A comprehensive millwork package for a luxury boutique hotel, demanding highly precise, custom-curved oak paneling and durable yet elegant bar fixtures.",
     challenge: "The lobby featured an undulating ceiling design that required the wall paneling to follow complex radii. Additionally, the installation schedule was extremely tight due to a fixed grand opening date.",
     solution: "We engineered custom bending plywood substrates in our shop and pre-finished all veneers to minimize on-site work. Our installation team worked staggered shifts to safely coordinate with other trades, ensuring a flawless handover three days ahead of schedule.",
-    thumbnail: "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2000&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1542314831-c6a4d146af50?q=80&w=2000&auto=format&fit=crop", // Hotel Lobby
+    thumbnail: "/images/projects/luminary_hero_1788325837950.jpg",
+    heroImage: "/images/projects/luminary_hero_1788325837950.jpg", // Hotel Lobby
     beforeImage: "/images/projects/luminary_before_1788299957396.jpg", // Raw construction
     afterImage: "/images/projects/luminary_after_1788299992067.jpg", // Finished hotel room
     gallery: [
-      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1551882547-ff40c0d1396a?q=80&w=2000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1590490359854-ceba1a52e1eb?q=80&w=2000&auto=format&fit=crop"
+      "/images/projects/luminary_gallery_1_1788326721024.jpg",
+      "/images/projects/luminary_gallery_2_1788326815623.jpg",
+      "/images/projects/luminary_gallery_3_1788327436933.jpg"
     ]
   },
   {
@@ -52,14 +52,14 @@ export const projectsData: Project[] = [
     overview: "A complete millwork overhaul for a luxury penthouse, focusing on seamless, handle-less cabinetry and integrated high-end appliances.",
     challenge: "Condominium regulations restricted elevator usage and working hours. The design called for massive floor-to-ceiling walnut panels that could not fit through standard entryways.",
     solution: "We designed a proprietary interlocking cleat system that allowed us to split the massive panels into modular sections. Once assembled on-site, the seams were completely invisible, preserving the monolithic design intent.",
-    thumbnail: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop",
+    thumbnail: "/images/projects/westend_hero_1788339405053.jpg",
+    heroImage: "/images/projects/westend_hero_1788339405053.jpg",
     beforeImage: "/images/projects/westend_before_1788300017199.jpg", // Framing/woodworking
     afterImage: "/images/projects/westend_after_1788300046045.jpg", // Finished modern kitchen
     gallery: [
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154526-990dced4ea0d?q=80&w=2000&auto=format&fit=crop"
+      "/images/projects/westend_gallery_1_1788339639031.jpg",
+      "/images/projects/westend_gallery_2_1788339860216.jpg",
+      "/images/projects/westend_gallery_3_1788340021809.jpg"
     ]
   },
   {
