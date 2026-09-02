@@ -239,8 +239,8 @@ export default function Home() {
           {/* Card 1: Anchor (Tall Vertical) */}
           <div className="service-card-item md:row-span-2 h-[60vh] md:h-[90vh]">
             <ServiceCard 
-              title="Commercial & Residential Installations"
-              imageSrc="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop"
+              title="Commercial Cabinetry"
+              imageSrc="/images/homepage/service_commercial_cabinetry_1788344008593.jpg"
               href="/services/millwork"
               className="w-full h-full"
             />
@@ -249,8 +249,8 @@ export default function Home() {
           {/* Card 2: Top Right (Horizontal) */}
           <div className="service-card-item h-[40vh] md:h-[45vh] -mb-2 md:mb-0">
             <ServiceCard 
-              title="Commercial Millwork"
-              imageSrc="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+              title="Onsite Trim and Finish"
+              imageSrc="/images/homepage/service_trim_finish_1788344028693.jpg"
               href="/services/commercial"
               className="w-full h-full"
             />
@@ -259,8 +259,8 @@ export default function Home() {
           {/* Card 3: Bottom Right (Square-ish) */}
           <div className="service-card-item h-[40vh] md:h-[45vh]">
             <ServiceCard 
-              title="Residential Case Goods"
-              imageSrc="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+              title="Bespoke Paneling"
+              imageSrc="/images/homepage/service_bespoke_paneling_1788344061960.jpg"
               href="/services/residential"
               className="w-full h-full"
             />

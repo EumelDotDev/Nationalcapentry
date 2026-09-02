@@ -39,7 +39,7 @@ export default function Navbar({ className = "", darkText = false }: NavbarProps
   ];
 
   const textColorClass = darkText ? "text-zinc-950" : "text-zinc-50";
-  const burgerBgClass = darkText ? "bg-zinc-950" : "bg-white";
+  const burgerBgClass = (darkText && !isMobileMenuOpen) ? "bg-zinc-950" : "bg-white";
 
   return (
     <>

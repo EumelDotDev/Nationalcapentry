@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PreFooterBanner from "@/components/PreFooterBanner";
 import { servicesData } from "@/data/services";
 import Link from "next/link";
 
@@ -270,6 +271,7 @@ export default function ServiceDetail({ params }: { params: Promise<{ slug: stri
         </div>
       </section>
 
+      <PreFooterBanner />
       <Footer />
     </main>
   );

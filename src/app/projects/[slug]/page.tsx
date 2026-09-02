@@ -26,9 +26,9 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
 
   return (
     <main className="min-h-screen bg-white text-zinc-950 selection:bg-zinc-950 selection:text-white">
-      {/* Light Navbar for white background */}
+      {/* Light Navbar for dark hero image background */}
       <div className="absolute top-0 left-0 w-full z-50 px-6 lg:px-16 pt-12 flex flex-col gap-6">
-        <Navbar darkText={true} /> 
+        <Navbar darkText={false} /> 
         <Link 
           href="/projects"
           className="inline-flex items-center text-xs font-sans font-bold uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors group w-max mt-4 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full"

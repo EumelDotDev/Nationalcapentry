@@ -74,14 +74,14 @@ export const projectsData: Project[] = [
     overview: "A striking, multi-level architectural feature in the central atrium of a corporate headquarters, designed for all-hands meetings and casual collaboration.",
     challenge: "The stadium seating required structural integrity to support hundreds of people while maintaining the refined finish of A-grade white oak.",
     solution: "We collaborated closely with structural engineers to clad a hidden steel armature with precisely milled oak treads and risers. Integrated LED channels were milled directly into the nosing for a seamless lighting effect.",
-    thumbnail: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop", // Atrium/Office
+    thumbnail: "/images/projects/tech_hero_1788340774075.jpg",
+    heroImage: "/images/projects/tech_hero_1788340774075.jpg", // Atrium/Office
     beforeImage: "/images/projects/tech_before_1788300075294.jpg", // Construction beams
     afterImage: "/images/projects/tech_after_1788300105003.jpg", // Finished office
     gallery: [
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop"
+      "/images/projects/tech_gallery_1_1788340968866.jpg",
+      "/images/projects/tech_gallery_2_1788341327271.jpg",
+      "/images/projects/tech_gallery_3_1788342718498.jpg"
     ]
   },
   {
