@@ -9,7 +9,7 @@ const projects = [
     id: "01",
     title: "Commercial Cabinetry",
     client: "Toronto Financial District",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/projects/tech_hero_1788340774075.jpg",
     style: "w-[85vw] md:w-[50vw] h-[50vh] md:h-[70vh] top-[5vh] md:top-[10vh] left-[5vw] md:left-[10vw]", // Floating card
     zImage: 0,
     zText: 10,
@@ -18,7 +18,7 @@ const projects = [
     id: "02",
     title: "On-Site Trim & Finish",
     client: "Luxury Residence, Vancouver",
-    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/projects/luminary_hero_1788325837950.jpg",
     style: "w-[75vw] md:w-[45vw] h-[40vh] md:h-[60vh] bottom-6 md:bottom-0 right-6 md:right-[10vw]", // Offset bottom right
     zImage: 20,
     zText: 30,
@@ -27,7 +27,7 @@ const projects = [
     id: "03",
     title: "Bespoke Paneling",
     client: "Boutique Hotel, Saint Lucia",
-    image: "https://images.unsplash.com/photo-1546967900-1bea5f16b69d?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/projects/westend_hero_1788339405053.jpg",
     style: "w-[80vw] md:w-[50vw] h-[40vh] md:h-[70vh] top-[15vh] md:top-[10vh] left-6 md:left-[5vw]", // Offset top left
     zImage: 40,
     zText: 50,
@@ -83,7 +83,7 @@ export default function SelectedWorks() {
       
       {/* Absolute Header */}
       <div className="absolute top-8 left-6 md:left-12 z-50 mix-blend-difference text-white">
-        <span className="font-sans font-bold uppercase tracking-[0.2em] text-sm opacity-80">
+        <span className="font-sans font-bold uppercase tracking-[0.2em] text-2xl md:text-3xl opacity-90">
           Our Installations
         </span>
       </div>

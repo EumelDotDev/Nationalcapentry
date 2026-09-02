@@ -59,31 +59,35 @@ export default function ServiceDetail({ params }: { params: Promise<{ slug: stri
         );
       });
 
-      // Pinned Process Section (Additive Assembly)
-      const processTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".process-section",
-          start: "top top",
-          end: "+=2000", // Pin section for 2000px of scrolling
-          pin: true,
-          scrub: 1,
-        }
-      });
+      // Pinned Process Section (Additive Assembly) - Desktop Only
+      const mm = gsap.matchMedia();
 
-      // Card 01 remains static in its natural grid position.
-      // Cards 02, 03, 04 start from below the screen.
-      gsap.set(".process-card-anim", {
-        y: "100vh",
-        opacity: 0,
-      });
+      mm.add("(min-width: 1280px)", () => {
+        const processTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".process-section",
+            start: "top top",
+            end: "+=2000", // Pin section for 2000px of scrolling
+            pin: true,
+            scrub: 1,
+          }
+        });
 
-      // As you scroll down, cards 02, 03, 04 slide up into their grid positions sequentially
-      processTl.to(".process-card-anim", {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.5,
-        ease: "power2.out"
+        // Card 01 remains static in its natural grid position.
+        // Cards 02, 03, 04 start from below the screen.
+        gsap.set(".process-card-anim", {
+          y: "100vh",
+          opacity: 0,
+        });
+
+        // As you scroll down, cards 02, 03, 04 slide up into their grid positions sequentially
+        processTl.to(".process-card-anim", {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.5,
+          ease: "power2.out"
+        });
       });
 
     }, containerRef);
@@ -93,11 +97,8 @@ export default function ServiceDetail({ params }: { params: Promise<{ slug: stri
   return (
     <main ref={containerRef} className="min-h-screen bg-white text-zinc-950 overflow-hidden font-sans">
       
-      {/* Navbar with dark text because background is white */}
-      {/* We need to pass a prop or class to Navbar if it defaults to white text, 
-          assuming Navbar uses mix-blend-difference or can handle it */}
-      <div className="w-full mix-blend-difference text-white z-50 relative">
-        <Navbar className="px-6 lg:px-12 py-8" />
+      <div className="w-full z-50 relative">
+        <Navbar darkText={true} className="px-6 lg:px-12 py-8" />
       </div>
 
       {/* 1. HERO SECTION */}
@@ -201,7 +202,7 @@ export default function ServiceDetail({ params }: { params: Promise<{ slug: stri
       </section>
 
       {/* 5. PROCESS SECTION (Additive Assembly Pinned Scroll) */}
-      <section className="process-section relative w-full h-screen bg-[#000000] text-white flex flex-col justify-center overflow-hidden px-6 lg:px-12">
+      <section className="process-section relative w-full min-h-screen xl:h-screen py-24 xl:py-0 bg-[#000000] text-white flex flex-col justify-center overflow-hidden px-6 lg:px-12">
         
         {/* Heading */}
         <div className="max-w-[1400px] mx-auto w-full mb-12 md:mb-24 z-10 relative process-heading">
@@ -214,7 +215,7 @@ export default function ServiceDetail({ params }: { params: Promise<{ slug: stri
         </div>
 
         {/* 4-Column Seamless Grid */}
-        <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 relative z-20">
+        <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-0 relative z-20">
           
           {/* Step 1 - Static */}
           <div className="process-card bg-[#151515] p-8 lg:p-12 flex flex-col justify-between h-[300px] md:h-[380px]">

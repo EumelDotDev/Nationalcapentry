@@ -108,30 +108,30 @@ export default function ServicesPage() {
       id: "01",
       slug: "millwork",
       title: "Custom\nMillwork",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-      cardWidth: "w-[713px]",
-      imgWidth: "w-[570px]",
-      imgHeight: "h-[360px]",
+      image: "/images/services/service_trim_hero.jpg",
+      cardWidth: "w-full lg:w-[713px]",
+      imgWidth: "w-full lg:w-[570px]",
+      imgHeight: "h-[300px] lg:h-[360px]",
       alignSelf: "self-start", // Left
     },
     {
       id: "02",
       slug: "commercial",
       title: "Commercial\nInstallation",
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop",
-      cardWidth: "w-[680px]",
-      imgWidth: "w-[540px]",
-      imgHeight: "h-[420px]",
+      image: "/images/services/service_commercial_hero.jpg",
+      cardWidth: "w-full lg:w-[680px]",
+      imgWidth: "w-full lg:w-[540px]",
+      imgHeight: "h-[300px] lg:h-[420px]",
       alignSelf: "self-end", // Right
     },
     {
       id: "03",
       slug: "residential",
       title: "Residential\nCase Goods",
-      image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop",
-      cardWidth: "w-[650px]",
-      imgWidth: "w-[500px]",
-      imgHeight: "h-[400px]",
+      image: "/images/services/service_paneling_hero.jpg",
+      cardWidth: "w-full lg:w-[650px]",
+      imgWidth: "w-full lg:w-[500px]",
+      imgHeight: "h-[300px] lg:h-[400px]",
       alignSelf: "self-start", // Left
     }
   ];
@@ -143,7 +143,7 @@ export default function ServicesPage() {
       <section className="hero-section relative w-full h-screen flex flex-col items-center justify-center bg-zinc-950 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" 
+            src="/images/services/paneling-ceiling.png" 
             alt="Hero Background" 
             className="w-full h-full object-cover opacity-30"
           />
@@ -154,7 +154,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="relative z-10 flex flex-col items-center text-center px-4 w-full mt-24">
-          <h1 className="font-serif text-[18vw] md:text-[14vw] leading-[0.8] tracking-tight text-white uppercase flex gap-4 md:gap-8 overflow-hidden">
+          <h1 className="font-serif text-[18vw] md:text-[14vw] leading-[0.8] tracking-tight text-white uppercase flex flex-col md:flex-row gap-0 md:gap-8 overflow-hidden items-center">
             <span className="block overflow-hidden"><span className="block hero-title-word">OUR</span></span>
             <span className="block overflow-hidden"><span className="block hero-title-word">SERVICES</span></span>
           </h1>
@@ -191,11 +191,11 @@ export default function ServicesPage() {
               className={`${svc.alignSelf} max-w-full block`}
             >
               <div 
-                className={`service-card flex justify-end relative ${svc.cardWidth} group cursor-pointer`}
+                className={`service-card flex flex-col-reverse lg:flex-row justify-end relative ${svc.cardWidth} group cursor-pointer gap-6 lg:gap-0`}
               >
                 
                 {/* Image Container */}
-                <div className={`${svc.imgWidth} ${svc.imgHeight} relative overflow-hidden bg-zinc-900 max-w-full`}>
+                <div className={`${svc.imgWidth} ${svc.imgHeight} relative overflow-hidden bg-zinc-900 max-w-full w-full`}>
                   <img 
                     src={svc.image} 
                     alt={svc.title.replace('\n', ' ')}
@@ -203,10 +203,10 @@ export default function ServicesPage() {
                   />
                 </div>
 
-                {/* Text Overlay with mix-blend-difference */}
-                {/* Positioned absolutely on the left side of the CARD */}
-                <div className="absolute top-[20%] left-0 z-10 text-white mix-blend-difference pointer-events-none service-text-reveal flex flex-col max-w-[400px]">
-                  <p className="font-sans text-sm tracking-widest mb-6">Services {svc.id}</p>
+                {/* Text Overlay */}
+                {/* Positioned relatively on mobile (above image), absolutely on desktop (overlapping) */}
+                <div className="relative lg:absolute top-0 lg:top-[20%] left-0 z-10 text-zinc-950 lg:text-white lg:mix-blend-difference pointer-events-none service-text-reveal flex flex-col max-w-full lg:max-w-[400px]">
+                  <p className="font-sans text-sm tracking-widest mb-4 lg:mb-6">Services {svc.id}</p>
                   <h2 className="font-serif text-5xl md:text-[5rem] lg:text-[5.5rem] leading-[1] tracking-tighter uppercase whitespace-pre-line group-hover:-translate-y-2 transition-transform duration-500">
                     {svc.title}
                   </h2>
@@ -224,7 +224,7 @@ export default function ServicesPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop" 
+            src="/images/services/CTA.png" 
             alt="CTA Background" 
             className="w-full h-full object-cover"
           />

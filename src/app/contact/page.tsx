@@ -53,7 +53,7 @@ export default function ContactPage() {
             <div className="w-full lg:w-1/2 flex justify-start fade-in-up">
               <div className="w-full max-w-[600px] aspect-[4/5] relative overflow-hidden bg-zinc-900 image-reveal">
                 <img 
-                  src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2070&auto=format&fit=crop" 
+                  src="/images/services/contact-us.png" 
                   alt="Millwork Interior"
                   className="w-full h-full object-cover opacity-90"
                 />

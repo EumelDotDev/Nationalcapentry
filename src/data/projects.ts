@@ -96,8 +96,8 @@ export const projectsData: Project[] = [
     overview: "Restoration and modernization of a historic dining space, balancing modern functional requirements with heritage preservation.",
     challenge: "Working within a 100-year-old building meant no walls were plumb or square. The new millwork had to perfectly scribe to highly irregular stone walls.",
     solution: "We utilized 3D laser scanning to capture the exact contours of the stone walls. Our CNC machines then cut the scribe panels to perfectly match the irregular surfaces before they even arrived on site.",
-    thumbnail: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2000&auto=format&fit=crop", // Restaurant
+    thumbnail: "/images/services/heritage-restaurant.png",
+    heroImage: "/images/services/heritage-restaurant.png", // Restaurant
     beforeImage: "/images/projects/heritage_before_1788300129800.jpg", // Raw space
     afterImage: "/images/projects/heritage_after_1788300162406.jpg", // Finished restaurant
     gallery: [

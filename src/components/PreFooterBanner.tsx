@@ -7,7 +7,7 @@ export default function PreFooterBanner() {
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop" 
+          src="/images/services/homepage-hero.png" 
           alt="Architectural Millwork"
           className="w-full h-full object-cover object-center grayscale opacity-50"
         />

@@ -194,7 +194,7 @@ export default function Home() {
           ref={imageContainerRef}
           className="w-full lg:w-1/2 h-1/2 lg:h-full relative z-10 overflow-hidden"
         >
-          {/* We are using an Unsplash placeholder here until the user provides the Pinterest image */}
+
           <img
             ref={imageRef}
             src="/images/homepage/homepage_hero_1788301476427.jpg"
@@ -210,7 +210,7 @@ export default function Home() {
       <section ref={trustBarRef} className="py-24 border-y border-zinc-800 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between gap-12 md:gap-8">
           <div className="trust-stat flex flex-col">
-            <span className="font-serif text-5xl md:text-7xl text-zinc-50 tracking-tighter">15<span className="text-red-600">+</span></span>
+            <span className="font-serif text-5xl md:text-7xl text-zinc-50 tracking-tighter">40<span className="text-red-600">+</span></span>
             <span className="font-sans text-sm text-zinc-400 uppercase tracking-widest mt-2">Years of Experience</span>
           </div>
           <div className="trust-stat flex flex-col">
@@ -229,7 +229,7 @@ export default function Home() {
         {/* Massive Ueno-style Header */}
         <h2 
           ref={servicesHeaderRef}
-          className="font-serif text-[12vw] leading-[0.8] tracking-tighter whitespace-nowrap mb-16 pl-6 md:pl-12 bg-gradient-to-r from-amber-700/60 via-zinc-800/40 to-emerald-900/40 bg-clip-text text-transparent"
+          className="font-serif text-[12vw] leading-[0.8] tracking-tighter whitespace-nowrap mb-16 pl-6 md:pl-12 text-zinc-50"
         >
           OUR EXPERTISE
         </h2>
@@ -241,7 +241,7 @@ export default function Home() {
             <ServiceCard 
               title="Commercial Cabinetry"
               imageSrc="/images/homepage/service_commercial_cabinetry_1788344008593.jpg"
-              href="/services/millwork"
+              href="/services/commercial"
               className="w-full h-full"
             />
           </div>
@@ -251,7 +251,7 @@ export default function Home() {
             <ServiceCard 
               title="Onsite Trim and Finish"
               imageSrc="/images/homepage/service_trim_finish_1788344028693.jpg"
-              href="/services/commercial"
+              href="/services/millwork"
               className="w-full h-full"
             />
           </div>
