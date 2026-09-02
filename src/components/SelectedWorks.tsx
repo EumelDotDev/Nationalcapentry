@@ -10,7 +10,7 @@ const projects = [
     title: "Commercial Cabinetry",
     client: "Toronto Financial District",
     image: "/images/projects/tech_hero_1788340774075.jpg",
-    style: "w-[85vw] md:w-[50vw] h-[50vh] md:h-[70vh] top-[5vh] md:top-[10vh] left-[5vw] md:left-[10vw]", // Floating card
+    style: "w-[85vw] md:w-[50vw] h-[50vh] md:h-[70vh] top-[15vh] md:top-[10vh] left-[5vw] md:left-[10vw]", // Floating card
     zImage: 0,
     zText: 10,
   },
@@ -82,7 +82,7 @@ export default function SelectedWorks() {
     <section ref={containerRef} className="relative w-full h-screen bg-zinc-950 overflow-hidden">
       
       {/* Absolute Header */}
-      <div className="absolute top-8 left-6 md:left-12 z-50 mix-blend-difference text-white">
+      <div className="absolute top-8 left-6 md:left-12 z-[100] mix-blend-difference text-white">
         <span className="font-sans font-bold uppercase tracking-[0.2em] text-2xl md:text-3xl opacity-90">
           Our Installations
         </span>

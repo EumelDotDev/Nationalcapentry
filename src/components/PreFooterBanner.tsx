@@ -9,7 +9,7 @@ export default function PreFooterBanner() {
         <img 
           src="/images/services/homepage-hero.png" 
           alt="Architectural Millwork"
-          className="w-full h-full object-cover object-center grayscale opacity-50"
+          className="w-full h-full object-cover object-center opacity-50"
         />
         <div className="absolute inset-0 bg-black/60" />
         {/* Soft radial gradient to focus center text */}
@@ -40,10 +40,12 @@ export default function PreFooterBanner() {
         {/* Editorial CTA Link */}
         <Link 
           href="/contact" 
-          className="inline-flex items-center text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-zinc-50 border-b border-zinc-600 pb-2 hover:border-white transition-colors group"
+          className="inline-flex items-center w-fit bg-white text-zinc-950 px-6 py-4 text-xs uppercase tracking-[0.2em] font-bold hover:bg-zinc-200 transition-all duration-300 group"
         >
           Get a Quote
-          <span className="ml-3 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform text-lg leading-none">↗</span>
+          <span className="ml-4 flex items-center justify-center bg-zinc-950 text-white w-6 h-6 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </span>
         </Link>
 
       </div>

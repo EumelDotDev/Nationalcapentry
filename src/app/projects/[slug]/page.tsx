@@ -31,7 +31,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
         <Navbar darkText={false} /> 
         <Link 
           href="/projects"
-          className="inline-flex items-center text-xs font-sans font-bold uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors group w-max mt-4 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full"
+          className="hidden md:inline-flex items-center text-xs font-sans font-bold uppercase tracking-widest text-zinc-500 hover:text-zinc-900 transition-colors group w-max mt-4 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full"
         >
           <span className="mr-2 transform group-hover:-translate-x-1 transition-transform">←</span>
           Back to Projects
