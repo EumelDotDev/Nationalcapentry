@@ -31,8 +31,8 @@ export default function Footer() {
           <span className="block text-[10px] uppercase tracking-[0.2em] text-zinc-500 mb-10">Navigation</span>
           <ul className="flex flex-col gap-4">
             <li><Link href="/" className="text-sm text-zinc-300 hover:text-white transition-colors">Home</Link></li>
-            <li><Link href="#services" className="text-sm text-zinc-300 hover:text-white transition-colors">Services</Link></li>
-            <li><Link href="#projects" className="text-sm text-zinc-300 hover:text-white transition-colors">Projects</Link></li>
+            <li><Link href="/services" className="text-sm text-zinc-300 hover:text-white transition-colors">Services</Link></li>
+            <li><Link href="/projects" className="text-sm text-zinc-300 hover:text-white transition-colors">Projects</Link></li>
             <li><Link href="/contact" className="text-sm text-zinc-300 hover:text-white transition-colors">Contact</Link></li>
           </ul>
         </div>
